@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Survival Game</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="/assets/img/fav.png">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-dark text-white">
+    <!-- Header -->
+    <header class="container-fluid py-3 bg-black">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center text-md-start">
+                <h1 class="display-4 text-danger fw-bold">FLUTTERSHY VS ZOMBIES</h1>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="assets/img/cover.png" alt="Game Cover" class="img-fluid" style="max-height: 100px;">
+            </div>
+            <div class="col-md-4 text-center text-md-end">
+                <p class="lead mb-0 text-warning">
+                    <strong>Instrucciones:</strong><br>
+                    Mévete con WASD, dispara a los zombies con el cursor del mouse, si te toca un enemigo pierdes
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Game Area -->
+    <main class="flex-grow-1 d-flex align-items-center justify-content-center py-4">
+        <canvas id="myCanvas" class="shadow-lg"></canvas>
+        <div id="gameOver">
+            <img src="assets/img/gameover.png" alt="Game Over">
+        </div>
+        <div id="kill-counter">Kills: 0</div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container-fluid py-3 bg-black text-center">
+        <div class="row">
+            <div class="col-12">
+                <p class="mb-1">Examen de Graficación, Segundo seguimiento</p>
+                <div class="d-flex justify-content-center gap-4">
+                    <span>Amador Ramírez Jesús Gabriel - 22200710</span>
+                    <span>Serrano Cortés Ricardo de Jesús - 22200768</span>
+                    <span>Luna Hidalgo Francisco Emmanuel - 22200747</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Audio Element -->
+    <audio id="bgMusic" loop>
+        <source src="assets/music/main.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
